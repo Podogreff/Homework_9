@@ -2,7 +2,6 @@ def oops():
     name = "Vlad"
     print(name[4])
 
-
 def new_oops():
     try:
         oops()
