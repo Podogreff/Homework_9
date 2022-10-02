@@ -1,17 +1,13 @@
 def oops():
-    name = "vlad"
+    name = "Vlad"
     print(name[4])
 
 
-oops()
-
-
 def new_oops():
-    name = "vlad"
     try:
-        print(name[4])
+        oops()
     except IndexError:
-        print("oops")
+        print("Hello, IndexError =)")
 
 
 new_oops()
