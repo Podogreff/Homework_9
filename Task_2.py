@@ -1,7 +1,6 @@
-def ab_func(a=0, b=0):
+def ab_func(a, b):
     try:
-        a = int(input("Enter first number: "))
-        b = int(input("Enter second number: "))
+        a, b = int(a), int(b)
         print(a**2 / b)
     except ValueError:
         print("There is TypeError, please enter the NUMBER!")
@@ -9,4 +8,4 @@ def ab_func(a=0, b=0):
         print("b cant be: '0', please enter another number")
 
 
-ab_func()
+ab_func(input("Enter first number: "), input("Enter second number: "))
